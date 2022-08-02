@@ -32,64 +32,69 @@
         
         <xmp class="textwhite">
 
-            <!DOCTYPE html>
-            <html>
+        <!DOCTYPE html>
+        <html>
 
-            <head>
-                <title>Atividade Prática SENAC</title>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="styles.css">
-            </head>
+        <head>
+            <title>Atividade Prática SENAC</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="styles.css">
+        </head>
 
-            <body>
+        <body>
 
-                <div class="background">
+            <div class="background">
 
-                    <h1 ><p><strong>Atividade Prática JavaScript</strong></p></h1>
+                <h1 ><p><strong>Atividade Prática JavaScript</strong></p></h1>
 
-                    <h2><p><strong>Curso programador de Sistema <br> SENAC Umuarama</strong></p></h2>
+                <h2><p><strong>Curso Programador de Sistema <br> SENAC Umuarama</strong></p></h2>
+            
+            </div>
+
+            <div class="topnav">
+
+            <form action="">
+
+            <a href="index.html">Página Principal</a>
+
+            </form>
+
+            </div>
+
+            <ul id="fizzbuzz">
+
+                <li id="list"></li>
+
+            </ul>
+
+            <div id="rodape">
+                <footer>
+                    SENAC Umuarama - Paraná - Professor Carlos Pellegrin - 2022 JRH
+                </footer>
+            </div>
+
+          <script>
                 
-                </div>
+                let list = "";
 
-                <div class="topnav">                 
-                    <a href="index.html">Página Principal</a>
+                let str = "";
 
-                </div>
+                for(var j = 1; j <= 100; j++) {
 
-                <ul id="fizzbuzz">
-
-                    <li id="list"></li>
-
-                </ul>
-
-                <div id="rodape">
-                    <footer>
-                        SENAC Umuarama - Paraná - Professor Carlos Pellegrin - 2022
-                    </footer>
-                </div>
-
-              <script>
+                   let f = (j % 3 == 0), b = (j % 5 == 0);
+                   
+                   str = f ? b ? "FizzBuzz" : "Fizz" : b ? "Buzz" : j;
                     
-                    let list = "";
+                   list += "<li>" + str + "</li>";
+                }
 
-                    let str = "";
+                document.getElementById("list").innerHTML = list;
 
-                    for(var j = 1; j <= 100; j++) {
+          </script>
 
-                       let f = (j % 3 == 0), b = (j % 5 == 0);
-                       
-                       str = f ? b ? "FizzBuzz" : "Fizz" : b ? "Buzz" : j;
-                        
-                       list += "<li>" + str + "</li>";
-                    }
-
-                    document.getElementById("list").innerHTML = list;
-
-              </script>
-
-            </body>
-            </html>
+        </body>
+        </html>
 
         </xmp>           
     
