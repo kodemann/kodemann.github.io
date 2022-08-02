@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atividade Prática SENAC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="background">
+
+        <h1 ><p><strong>Atividade Prática JavaScript</strong></p></h1>
+
+        <h2><p><strong>Curso programador de Sistema <br> SENAC Umuarama</strong></p></h2>
+    
+    </div>
+
+    <div class="topnav">
+
+    <form action="">
+
+    <a href="index.html">Página Principal</a>
+
+    </form>
+
+    </div>
+
+    <div class="textwhite">
+
+    <h3><center>Contador de Cliques JavaScript</center></h3><br>
+    
+    <div>
+        <center id="num">0</center><br>
+        <center id="rval">0</center><br>
+    </div><br>
+
+    <center>
+        <div class="topnav2">
+            <a onclick="Contador()">Clique</a>
+            <a onclick="Reset()">Reset</a>
+        </div>
+        <div>
+        </center>
+    </div>
+
+        <div id="rodape">
+            <footer>
+                SENAC Umuarama - Paraná - Professor Carlos Pellegrin - 2022 JRH
+            </footer>
+        </div>  
+
+  <script> 
+
+    var Val = 0;
+    var rVal = 0;
+
+    function Contador() {
+        updateDisplay(++Val)
+        if (Val%10 == 0) {
+            alert("Você clicou 10 vezes!")
+        }
+    }
+
+    function updateDisplay(val) {
+        document.getElementById("num").innerHTML = Val
+        }
+    function Reset() {
+        Val = 0;
+        updateDisplay(Val)
+        rupdateDisplay(++rVal);
+    }
+
+    function rupdateDisplay(rval) {
+        document.getElementById("rval").innerHTML = rVal
+    }
+
+  </script>
+
+</body>
+</html>

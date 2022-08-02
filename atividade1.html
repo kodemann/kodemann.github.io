@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atividade Prática SENAC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="background">
+
+        <h1 ><p><strong>Atividade Prática JavaScript</strong></p></h1>
+
+        <h2><p><strong>Curso programador de Sistema <br> SENAC Umuarama</strong></p></h2>
+
+    </div>
+
+    <div class="topnav">
+
+    <form action="">
+
+    <a href="index.html">Página Principal</a>
+
+    </form>
+
+    </div>
+    
+    <div class="textwhite">
+
+            <p id="hash"></p>  
+
+    </div>
+
+    <div id="rodape">
+        <footer>
+            SENAC Umuarama - Paraná - Professor Carlos Pellegrin - 2022 JRH
+        </footer>
+    </div>
+
+<script>
+
+    for (var i = '#'; i.length <= 7; i += '#') {
+        console.log(i);
+
+        document.getElementById("hash").innerHTML += (i + '<br>')
+    }
+
+</script>
+
+</body>
+</html>

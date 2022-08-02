@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atividade Prática SENAC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="background">
+
+        <h1 ><p><strong>Atividade Prática JavaScript</strong></p></h1>
+
+        <h2><p><strong>Curso programador de Sistema <br> SENAC Umuarama</strong></p></h2>
+
+    </div>
+
+    <div class="topnav">
+
+    <form action="">
+
+    <a href="index.html">Página Principal</a>
+
+    </form>
+
+    </div>
+    
+    <div>
+        
+        <xmp class="textwhite">
+
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+                <title>Atividade Prática SENAC</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="styles.css">
+            </head>
+
+            <body>
+
+                <div class="background">
+
+                    <h1 ><p><strong>Atividade Prática JavaScript</strong></p></h1>
+
+                    <h2><p><strong>Curso programador de Sistema <br> SENAC Umuarama</strong></p></h2>
+                
+                </div>
+
+                    <div class="topnav">                 
+                    <a href="index.html">Página Principal</a>
+
+                </div>
+
+                <div class="textwhite">
+
+                    <p id="xadrez"></p>
+
+                </div>
+
+                <div id="rodape">
+                    <footer>
+                        SENAC Umuarama - Paraná - Professor Carlos Pellegrin - 2022 JRH
+                    </footer>
+                </div>
+
+                <script>
+
+                    let tamanho= 8;
+                    let tabuleiro= "";
+                    let y="";
+                    let x="";
+
+                    var ChessTable = document.createElement('table');
+                    for (let y = 0; y < tamanho; y++) {
+                    for (let x = 0; x < tamanho; x++) {
+                    if ((x + y) % 2 == 0) {
+                    tabuleiro += ".. ";
+                    } else {
+                    tabuleiro += "# ";
+                    }}
+                    tabuleiro += "<br>";
+                    }
+
+                    console.log(tabuleiro);
+
+                    document.getElementById("xadrez").innerHTML += tabuleiro;
+
+                </script>
+
+            </body>
+            </html>
+
+        </xmp>           
+    
+    </div>
+
+    <div id="rodape">
+        <footer>
+            SENAC Umuarama - Paraná - Professor Carlos Pellegrin - 2022
+        </footer>
+    </div>
+
+</body>
+</html>
